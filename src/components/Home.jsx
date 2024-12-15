@@ -69,7 +69,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="grid place-items-center bg-primary_dark rounded-2xl gap-7 py-20 sm:col-span-2 lg:col-span-1 lg:row-start-1 lg:row-span-2">
+              <div className="grid place-items-center bg-primary_dark rounded-2xl gap-7 py-20 sm:col-span-2 lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-2">
                 <img src={iconlogo} alt="icon logo" className="w-12 h-12" />
                 <div>
                   <h1 className="text-center my-5 text-4xl font-semibold">
@@ -114,7 +114,7 @@ const Home = () => {
               content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
             />
             <Faq
-              title="Can I use the template n multiple projects?"
+              title="Can I use the template in multiple projects?"
               content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
             />
             <Faq

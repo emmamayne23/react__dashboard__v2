@@ -19,8 +19,9 @@ export default {
           sm_md: "696px",
           md: "768px",
           lg: "1024px",
-          xl: "1280px",
-          xxl: "1536px",
+          xl: "1111px",
+          xxl: "1280px",
+          xxxl: "1536px",
       },
       width: {
         "mobile-width": "270px"

@@ -1,8 +1,15 @@
+
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "text-secondary bg-secondary_dark p-3 py-2 rounded-xl"
+      : "rounded-lg py-1 pl-5 duration-300";
+
   const [openSidebar, setOpenSidebar] = useState(false);
 
   useEffect(() => {
@@ -41,7 +48,11 @@ const Navbar = () => {
       </div>
 
       {/** nav links for mobile devices */}
-      <div className={`${openSidebar ? "flex" : "hidden"} fixed top-0 left-0 right-0 bottom-0 z-50`}>
+      <div
+        className={`${
+          openSidebar ? "flex" : "hidden"
+        } fixed top-0 left-0 right-0 bottom-0 z-50`}
+      >
         <div className="bg-overlay absolute top-0 w-full h-full z-50">
           <div className="sidebar absolute flex flex-col gap-14 h-full z-50 top-0 bg-gray-700 p-6 w-mobile-width shadow-md">
             <Link to="/">
@@ -96,28 +107,28 @@ const Navbar = () => {
 
       {/** nav links for desktop devices */}
       <div className="hidden items-center bg-primary_dark h-24 text-gray-400 px-5 justify-between fixed top-0 right-0 left-0 gap-14 z-50 lg:flex">
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="logo" />
-        </Link>
+        </NavLink>
         <div className="space-x-5 flex items-center  gap-1">
-          <Link to="/about" className="rounded-lg py-1 pl-5 duration-300">
+          <NavLink to="/about" className={linkClass}>
             About Us
-          </Link>
-          <Link to="/blog" className="rounded-lg py-1 pl-5 duration-300">
+          </NavLink>
+          <NavLink to="/blog" className={linkClass}>
             Blog
-          </Link>
-          <Link to="/portfolio" className="rounded-lg py-1 pl-5 duration-300">
+          </NavLink>
+          <NavLink to="/portfolio" className={linkClass}>
             Portfolio
-          </Link>
-          <Link to="/dashboard" className="rounded-lg py-1 pl-5 duration-300">
+          </NavLink>
+          <NavLink to="/dashboard" className={linkClass}>
             Dashboard
-          </Link>
-          <Link to="/contact" className="rounded-lg py-1 pl-5 duration-300">
+          </NavLink>
+          <NavLink to="/contact" className={linkClass}>
             Contact
-          </Link>
-          <Link to="/support" className="rounded-lg py-1 pl-5 duration-300">
+          </NavLink>
+          <NavLink to="/support" className={linkClass}>
             Support
-          </Link>
+          </NavLink>
         </div>
         <Link to="/get-started">
           <button className="bg-secondary px-3 text-white py-1.5 hover:bg-primary duration-300 w-full rounded-lg">
