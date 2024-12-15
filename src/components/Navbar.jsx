@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [openSidebar]);
 
   return (
-    <nav className="bg-primary_dark fixed top-0 left-0 right-0">
+    <nav className="bg-primary_dark fixed top-0 left-0 right-0 z-50">
       <div className="flex justify-between items-center p-5 lg:hidden">
         <Link to="/">
           <img src={logo} alt="logo" />
