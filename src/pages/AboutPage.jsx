@@ -15,7 +15,7 @@ const AboutPage = () => {
     <>
       <div>
         <div className="mt-16">
-          <div className="flex flex-col gap-3 p-5 xl:grid xl:grid-cols-2 xl:items-center bg-primary_dark h-lvh xl:h-[440px]">
+          <div className="flex flex-col gap-3 p-5 xl:grid xl:grid-cols-2 xl:items-center bg-primary_dark h-lvh xl:h-[500px]">
             <div className="mt-10">
               <h1 className="text-4xl font-semibold md:text-5xl mb-10">
                 Get to know Modernize Dashboard Template
