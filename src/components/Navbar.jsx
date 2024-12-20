@@ -90,7 +90,7 @@ const Navbar = () => {
                 Contact
               </Link>
               <Link
-                to="/support"
+                to="/blog"
                 className="rounded-lg py-1 pl-5 hover:bg-tertiary hover:text-secondary duration-300"
               >
                 Support
