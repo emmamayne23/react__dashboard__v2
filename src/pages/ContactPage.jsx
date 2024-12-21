@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import TopCard from "../components/TopCard";
+import MyMap from "../components/MyMap";
 
 const ContactPage = () => {
   return (
@@ -8,10 +9,10 @@ const ContactPage = () => {
         <div>
           <TopCard title="contact us" subtitle="We'd love to hear from you" />
         </div>
-        <div>
-          <div>{/**google map code here */}</div>
-          <div className="text-sm">
-            <form className="flex flex-col gap-7 py-5">
+        <div><MyMap /></div>
+        <div className="xl:w-11/12 xl:mx-auto xl:flex xl:justify-between xl:items-start xl:pt-10">    
+          <div className="text-sm w-full ">
+            <form className="flex flex-col gap-7 py-5 mx-auto">
               <div className="mx-auto space-y-2 w-11/12">
                 <label className="font-semibold">First Name *</label>
                 <input
@@ -69,7 +70,6 @@ const ContactPage = () => {
                 <p>Visit us in person or find our contact details to connect with us directly.</p>
             </span>
           </div>
-          <div></div>
         </div>
         <div className="mt-10">
           <Card />

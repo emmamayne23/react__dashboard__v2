@@ -7,7 +7,7 @@ import tailwindcss from "../assets/tailwindcss.png";
 import fontawesome from "../assets/fontawesome.png";
 import vite from "/vite.svg";
 import react from "../assets/react.png";
-import redux from "../assets/redux.png";
+import chartjs from "../assets/images/Chart.js_logo.svg.png"
 import topleftbanner from "../assets/banner-top-left.svg";
 import toprightbanner from "../assets/banner-top-right.svg";
 import bottompart from "../assets/bottom-part.svg"
@@ -81,7 +81,7 @@ const Hero = () => {
                 alt="tailwindcss"
                 className=" w-12 h-12 p-2 bg-overlay rounded-2xl"
               />
-              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-8 py-4 bg-white text-black">
+              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-6 py-4 bg-white text-black">
                 Tailwind
               </span>
             </div>
@@ -91,8 +91,8 @@ const Hero = () => {
                 alt="tailwindcss"
                 className=" w-12 h-12 p-2 bg-overlay rounded-2xl"
               />
-              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-8 py-4 bg-white text-black">
-                Awesome
+              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-4 py-4 bg-white text-black">
+                Font
               </span>
             </div>
             <div className="relative group w-12 h-12">
@@ -101,18 +101,18 @@ const Hero = () => {
                 alt="tailwindcss"
                 className=" w-12 h-12 p-3 bg-overlay rounded-2xl"
               />
-              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-8 py-4 bg-white text-black">
+              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-6 py-4 bg-white text-black">
                 Vite
               </span>
             </div>
             <div className="relative group w-12 h-12">
               <img
-                src={redux}
-                alt="tailwindcss"
-                className=" w-12 h-12 p-3 bg-overlay rounded-2xl"
+                src={chartjs}
+                alt="chartjs"
+                className=" w-12 h-12 p-2 bg-overlay rounded-2xl"
               />
-              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-8 py-4 bg-white text-black">
-                Redux
+              <span className="absolute top-16 inset-0 flex duration-300 ease-in-out items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity rounded-xl border px-6 py-4 bg-white text-black">
+                Chart.js
               </span>
             </div>
           </div>

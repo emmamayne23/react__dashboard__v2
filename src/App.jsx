@@ -7,6 +7,7 @@ import BlogsPage from "./pages/BlogsPage"
 import ContactPage from "./pages/ContactPage"
 import GetStartedPage from "./pages/GetStartedPage"
 import StartPage from "./pages/StartPage"
+import DashboardPage from "./pages/DashboardPage"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
+            {/**Pages */}
             <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
@@ -22,9 +24,12 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
           </Route>
 
-          {/**get started page */}
+          {/**Get started page */}
           <Route path="/get-started" element={<GetStartedPage />} />
           <Route path="/start" element={<StartPage />} />
+
+          {/**Dashboard page */}
+          <Route path="dashboard" element={<DashboardPage />} />
         </Routes>
       </BrowserRouter>
     </>
