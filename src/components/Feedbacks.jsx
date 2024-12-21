@@ -58,7 +58,7 @@ function Feedbacks() {
     <section className="bg-gray-800 text-white md:items-center py-16 px-6 lg:grid lg:grid-cols-2">
       <div className=" md:mx-10">
         <h2 className="text-3xl font-bold mb-8 ">What Our Users Say</h2>
-        <p className="my-5 tracking-wide">Our users' feedback is a testament to our <br />commitment to quality and user satisfaction.<br /> Read what they have to say about their journey with us.</p>
+        <p className="my-5 tracking-wide">Our users&apos; feedback is a testament to our <br />commitment to quality and user satisfaction.<br /> Read what they have to say about their journey with us.</p>
       </div>
 
       <div className="relative max-w-4xl mx-auto lg:mx-20 lg:py-10 border py-5 px-3 rounded-lg border-gray-600">

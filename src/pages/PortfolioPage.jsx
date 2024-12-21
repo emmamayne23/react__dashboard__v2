@@ -94,9 +94,9 @@ const PortfolioPage = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredImage = galleryImages.filter((galleryImage) => (
+  const filteredImage = galleryImages.filter((galleryImage) =>
     galleryImage.title.toLowerCase().includes(searchTerm.toLowerCase())
-  ))
+  );
 
   return (
     <>
