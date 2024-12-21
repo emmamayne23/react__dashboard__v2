@@ -112,13 +112,13 @@ const PortfolioPage = () => {
                 {galleryImages.length}
               </span>
             </div>
-            <div className="border rounded-lg py-1">
-              <i className="fa-solid fa-magnifying-glass mx-5"></i>
+            <div className="border rounded-lg py-1 flex items-center">
+              <i className="fa-solid fa-magnifying-glass mx-3"></i>
               <input
                 type="search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="bg-transparent focus:outline-none"
+                className="bg-transparent focus:outline-none w-32"
                 placeholder="Search Gallery"
               />
             </div>
