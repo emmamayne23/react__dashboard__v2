@@ -1,4 +1,11 @@
 import DashboardNavbar from "../components/DashboardNavbar";
+import RechartsLineChart from "../components/charts/RechartsLineChart";
+import RechartsBarChart from "../components/charts/RechartsBarChart";
+import EarningsPieChart from "../components/charts/EarningsPieChart";
+import AreaChartExample from "../components/charts/AreaChartExample";
+import ScatterChartExample from "../components/charts/ScatterChartExample";
+import RadarChartExample from "../components/charts/RadarChartExample";
+import ComposedChartExample from "../components/charts/ComposedChartExample";
 
 import user from "../assets/images/icon-user-male.svg";
 import briefcase from "../assets/images/icon-briefcase.svg";
@@ -6,6 +13,7 @@ import mailbox from "../assets/images/icon-mailbox.svg";
 import payroll from "../assets/images/icon-speech-bubble.svg";
 import star from "../assets/images/icon-favorites.svg";
 import icon from "../assets/images/icon-connect.svg";
+import piggy from "../assets/images/piggy.png"
 
 import user1 from "../assets/images/user-4.jpg";
 import user2 from "../assets/images/user-6.jpg";
@@ -62,6 +70,41 @@ const DashboardPage = () => {
               <p>Reports</p>
               <h1 className="text-2xl">59</h1>
             </span>
+          </div>
+        </div>
+
+        {/**Charts from chart.js */}
+        <div>
+          <div className="w-11/12 mx-auto lg:flex lg:items-center lg:justify-evenly my-10">
+            <AreaChartExample />
+            <ScatterChartExample />
+          </div>
+
+          <div className="w-11/12 mx-auto lg:flex lg:items-center lg:justify-evenly my-20">
+            <RadarChartExample />
+            <ComposedChartExample />
+          </div>
+        </div>
+        <div className="lg:flex lg:items-center lg:justify-evenly">
+          <div className="mt-10">
+            <h1 className="text-center">Website Visitors</h1>
+            <RechartsLineChart />
+          </div>
+
+          <div className="mt-10">
+            <h2 className="text-center">Sales Overview</h2>
+            <RechartsBarChart />
+          </div>
+        </div>
+
+        <div className="lg:grid grid-cols-2 lg:items-center lg:justify-between">
+          <img
+            src={piggy}
+            className="w-11/12 mx-auto object-cover bg-primary rounded-lg mt-20"
+          />
+          <div className="mt-20">
+            <h3 className="text-center">Earnings Distribution</h3>
+            <EarningsPieChart />
           </div>
         </div>
 

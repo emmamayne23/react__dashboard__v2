@@ -32,6 +32,7 @@ const DashboardNavbar = () => {
             </div>
             <i className="fa-solid fa-sun hover:cursor-pointer"></i>
             <i className="fa-solid fa-bell hover:cursor-pointer"></i>
+            <div className="w-2 h-2 bg-primary rounded-full absolute top-1.5 right-[116px]"></div>
             <i className="fa-solid fa-list hover:cursor-pointer"></i>
             <img src={user} className="w-10 h-10 rounded-full hover:cursor-pointer" />
           </div>
@@ -53,6 +54,12 @@ const DashboardNavbar = () => {
             </Link>
             <div className="space-y-5 flex flex-col gap-1">
                 <span className="text-sm ml-5 text-gray-400">HOME</span>
+                <Link
+                to="/"
+                className="rounded-lg py-1 pl-5 hover:bg-tertiary hover:text-secondary duration-300"
+              >
+              <i className="fa-solid fa-house mr-3"></i>Home Page
+              </Link>
               <Link
                 to=""
                 className="rounded-lg py-1 pl-5 hover:bg-tertiary hover:text-secondary duration-300"
