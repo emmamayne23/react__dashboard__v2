@@ -1,5 +1,5 @@
 
-# Modern React Dashboard
+# Modernize React Dashboard
 
 A comprehensive React dashboard application featuring multiple pages, data visualization, and a modern user interface.
 
