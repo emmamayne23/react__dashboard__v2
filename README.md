@@ -1,7 +1,7 @@
 
 # Modernize Dashboard
 
-A comprehensive dashboard application featuring multiple pages, data visualization, and a modern user interface.
+A comprehensive dashboard application featuring multiple pages, data visualization, and a modern user interface built with react.
 
 ## Overview
 
