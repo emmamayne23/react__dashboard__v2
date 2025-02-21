@@ -7,8 +7,9 @@ A comprehensive React dashboard application featuring multiple pages, data visua
 
 This project is a fully responsive dashboard built with React, featuring multiple pages including a homepage, about us section, portfolio, and an interactive admin dashboard with various data visualizations and charts.
 
-![Dashboard Screenshot](https://path-to-your-screenshot.png)
 
+![Dashboard Screenshot]
+![Screenshot 2025-02-21 143720](https://github.com/user-attachments/assets/f1c75d92-642b-449d-8555-15056f6785a6)
 ## Features
 
 ### Pages
